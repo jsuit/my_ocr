@@ -1,0 +1,13 @@
+# @package data
+_target_: ocr_model.dataloaders.icdar15.ICDARDataset
+dataset_name: icdar2015
+batch_size: 4
+resize:
+    height: 640
+    width: 640
+  # to do: labels
+min_text_size: 8
+with_text: True
+
+
+  

@@ -1,0 +1,26 @@
+# @package model
+_target_: ocr_model.model_defs.adapt_binary.AdaptBinarization
+trunk: 
+  name: resnet18
+  deform_conv: True
+mid: 
+  fpn:
+    in_channels: 
+      - 64
+      - 128
+      - 256
+      - 512
+    stride: 2
+    num_inner_channels: 256
+binary:
+    adaptive: True
+    in_channels: ${..mid.fpn.in_channels}
+    adapt_constant: 50
+  
+heads:
+  num_input_channels: ${..mid.fpn.num_inner_channels}
+  #num_objects_regression:
+  #  adaptive_pool: 32
+  
+      
+

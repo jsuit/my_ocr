@@ -1,0 +1,13 @@
+black
+torch
+torchvision
+hydra-core
+mlflow
+pytorch-lightning
+albumentations
+pyclipper
+shapely
+opencv-python
+tokenizers
+captum
+nvgpu

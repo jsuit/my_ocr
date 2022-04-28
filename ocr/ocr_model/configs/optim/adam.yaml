@@ -1,0 +1,8 @@
+optimizer: 
+  name: Adam
+  lr: 0.001
+  weight_decay: 0.0001
+scheduler: 
+  decay:
+    factor: 0.9
+stop: 128

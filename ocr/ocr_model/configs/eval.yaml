@@ -1,0 +1,14 @@
+
+defaults:
+  - logger: mlflow
+
+run_id: 225e979d5d22410fb34b556a5b9a175d
+data: 'old_config'
+exp_name:
+  "serve"
+work_dir: ??
+data_dir: ${work_dir}/datasets/
+tokenization:
+  bert-base-uncased
+
+viz: True

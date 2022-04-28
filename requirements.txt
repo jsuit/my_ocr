@@ -1,0 +1,12 @@
+streamlit
+fastapi
+black
+uvicorn[standard]
+sqlalchemy
+httpx
+streamlit-drawable-canvas
+python-multipart
+hydralit@git+https://github.com/Patarimi/hydralit.git
+torchserve 
+torch-model-archiver 
+torch-workflow-archiver

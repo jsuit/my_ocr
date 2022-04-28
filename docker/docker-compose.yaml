@@ -1,0 +1,29 @@
+version: "3"
+services:
+  base:
+    build:
+      context: ../
+      dockerfile: docker/ui/Dockerfile
+    image: ui_build
+    volumes:
+      - ./ocr/:/opt/ocr/ocr
+  fastapi:
+    build:
+      context: ../
+      dockerfile: docker/ui/streamlit/Dockerfile
+    ports:
+      - "8000:8000"
+    container_name: fastapi
+    depends_on:
+      - base
+    image: fastapi
+  streamlit:
+    build:
+      context: ../
+      dockerfile: docker/ui/streamlit/Dockerfile
+    ports:
+      - "8501:8501"
+    container_name: streamlit
+    image: streamlit
+    depends_on:
+      - fastapi

@@ -1,0 +1,10 @@
+
+optimizer: 
+  name: SGD
+  lr: 0.007
+  weight_decay: 1e-4
+  momentum: 0.9
+scheduler: 
+  decay:
+    factor: 0.9
+stop: 1200

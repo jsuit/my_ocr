@@ -1,0 +1,14 @@
+_target_: ocr_model.losses.IcdarLoss
+losses:
+  - DiceLoss:
+      eps: 1e-4
+  - BBoxLoss:
+      weight: 10.0
+  
+  
+
+
+
+
+
+  

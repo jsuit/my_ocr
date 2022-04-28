@@ -1,0 +1,7 @@
+
+
+accelerator: gpu
+strategy: 
+    multi: ddp
+devices: -1
+
