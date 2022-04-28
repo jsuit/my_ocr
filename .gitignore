@@ -162,7 +162,7 @@ cython_debug/
 
 *.db
 *.ts
-*.logs/
-imlruns/*
+*logs/
+*mlruns/*
 *.egg-info
-datasets/*
+*datasets/*
