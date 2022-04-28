@@ -1,0 +1,3 @@
+include ocr/VERSION.txt
+recursive-exclude ocr/ocr_model/datasets/ *
+exclude *.db
