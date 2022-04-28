@@ -163,10 +163,6 @@ cython_debug/
 *.db
 *.ts
 ocr/ocr_model/logs/**
-
-
-ocr/ocr_model/mlruns/**
-
-
-ocr/ocr_model/datasets/**
-*.ckpt
+ocr/ocr_model/mlruns/*
+*.egg-info
+ocr/ocr_model/datasets/*
